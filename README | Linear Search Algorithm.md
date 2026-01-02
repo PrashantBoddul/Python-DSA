@@ -1,40 +1,41 @@
-# Linear Search on Card Deck
+# Binary Search Algorithm
 
-This project demonstrates a simple **Linear Search Algorithm** implemented in Python to find the position of a specific card in a predefined deck.
+## Goal
+The goal is to find the position of a given card (e.g., `5`) by turning the minimum number of cards, using **Binary Search**.
 
 ---
 
-## 🔍 Problem Statement
-
-We have a deck of 13 cards:
-
-```python
-["A", "K", "Q", "J", 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-The goal is to find the position of a given card (e.g., 5) by turning the minimum number of cards, using Linear Search.
-
-🧠 How It Works
+## How It Works
 - The user inputs the card they want to search for.
-- The algorithm checks each card sequentially from left to right.
+- The algorithm repeatedly divides the deck into halves:
+  - It checks the middle card.
+  - If the middle card matches, the search ends.
+  - If the middle card is greater, the search continues in the left half.
+  - If the middle card is smaller, the search continues in the right half.
 - Once the card is found, it prints:
-- The number of cards turned
-- The position of the card in the deck (0‑indexed and human‑friendly)
-If the card is not found, the program notifies the user.
+  - The number of iterations taken
+  - The position of the card in the deck (0‑indexed and human‑friendly)
+- If the card is not found, the program notifies the user.
 
-📦 Sample Output
-Cards:- ['A', 'K', 'Q', 'J', 2, 3, 4, 5, 6, 7, 8, 9, 10]
+---
 
-Solve The DSA: We have 13 cards. At which position is card 5? You have to check by turning minimum cards.
-
+Cards:- [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Enter Card Which You Want To Test :- 5
-A 5
-K 5
-Q 5
-J 5
-2 5
-3 5
-4 5
-5 5
+Found at Iteration :- 3 
+Position of Card :- 4
 
-Number of Cards Turned By Using Linear Search Algorithm :- 8
-Position of Card '5' By Using Linear Search Algorithm :- 7
+
+---
+
+## Complexity
+- **Best Case:** O(1) → Card found at the middle position.
+- **Worst Case:** O(log n) → Card found after repeatedly halving the deck.
+- **Space Complexity:** O(1)
+
+---
+
+## Use Cases
+- Searching in sorted datasets.
+- Efficient lookups in large arrays.
+- Foundation for advanced algorithms like binary search trees.
+
