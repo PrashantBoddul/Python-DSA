@@ -18,7 +18,7 @@ The goal is to find the position of a given card (e.g., `5`) in a **rotated deck
 
 ## Sample Output
 - Cards:- [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]
-- Enter Card Which You Want To Test :- 5 8 5 9 5 10 5 1 5 2 5 3 5 4 5 5 5
+- Enter Card Which You Want To Test :- 5 
 - Number of Cards Turned By Using Linear Rotated Search Algorithm :- 8 
 - Position of Card '5' By Using Linear Rotated Search Algorithm :- 7
 
