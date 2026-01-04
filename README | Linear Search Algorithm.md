@@ -1,21 +1,12 @@
-# Linear Search on Card Deck
+# Linear Rotated Search Algorithm
 
-This project demonstrates a simple **Linear Search Algorithm** implemented in Python to find the position of a specific card in a predefined deck.
-
----
-
-## Problem Statement
-
-We have a deck of 13 cards:
-
-```python
-["A", "K", "Q", "J", 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-The goal is to find the position of a given card (e.g., 5) by turning the minimum number of cards, using Linear Search.
+## Goal
+The goal is to find the position of a given card (e.g., `5`) in a **rotated deck** by turning the minimum number of cards, using **Linear Rotated Search**.
 
 ---
 
 ## How It Works
+- The deck is rotated (e.g., `[8, 9, 10, 1, 2, 3, 4, 5, 6, 7]`).
 - The user inputs the card they want to search for.
 - The algorithm checks each card sequentially from left to right.
 - Once the card is found, it prints:
@@ -23,23 +14,26 @@ The goal is to find the position of a given card (e.g., 5) by turning the minimu
 - The position of the card in the deck (0‑indexed and human‑friendly)
 - If the card is not found, the program notifies the user.
 
-
 ---
 
 ## Sample Output
-Cards:- ['A', 'K', 'Q', 'J', 2, 3, 4, 5, 6, 7, 8, 9, 10]
+- Cards:- [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]
+- Enter Card Which You Want To Test :- 5 8 5 9 5 10 5 1 5 2 5 3 5 4 5 5 5
+- Number of Cards Turned By Using Linear Rotated Search Algorithm :- 8 
+- Position of Card '5' By Using Linear Rotated Search Algorithm :- 7
 
-Solve The DSA: We have 13 cards. At which position is card 5? You have to check by turning minimum cards.
 
-Enter Card Which You Want To Test :- 5
-A 5
-K 5
-Q 5
-J 5
-2 5
-3 5
-4 5
-5 5
 
-Number of Cards Turned By Using Linear Search Algorithm :- 8
-Position of Card '5' By Using Linear Search Algorithm :- 7
+---
+
+## Complexity
+- **Best Case:** O(1) → Card found at the first position.
+- **Worst Case:** O(n) → Card found at the last position or not present.
+- **Space Complexity:** O(1)
+
+---
+
+## Use Cases
+- Searching in rotated arrays (common in interview problems).
+- Handling datasets that are partially sorted but rotated.
+- Educational demonstrations of search algorithms in non‑sorted sequences.
