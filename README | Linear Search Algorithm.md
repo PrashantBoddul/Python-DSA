@@ -29,14 +29,6 @@ This project demonstrates a simple **Linear Search Algorithm** implemented in Py
 - Solve The DSA: We have 13 cards. At which position is card 5? You have to check by turning minimum cards.
 
 - Enter Card Which You Want To Test :- 5
-A 5
-K 5
-Q 5
-J 5
-2 5
-3 5
-4 5
-5 5
 
 - Number of Cards Turned By Using Linear Search Algorithm :- 8
 - Position of Card '5' By Using Linear Search Algorithm :- 7
