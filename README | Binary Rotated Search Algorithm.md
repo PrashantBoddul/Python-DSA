@@ -1,7 +1,7 @@
 # Binary Search in Rotated Array
 
 ## Goal
-  The goal is to find the position of a given card (e.g., `10`) in a **rotated deck** using **Binary Search**. Unlike linear search, this algorithm leverages the sorted property of subarrays even after rotation.
+The goal is to find the position of a given card (e.g., `10`) in a **rotated deck** using **Binary Search**. Unlike linear search, this algorithm leverages the sorted property of subarrays even after rotation.
 
 ---
 
