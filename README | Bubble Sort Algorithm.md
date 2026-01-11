@@ -14,8 +14,8 @@ The goal is to sort an unsorted array (e.g., `[1,9,2,8,3,7,4,6,5,10,0]`) into as
 ---
 
 ## Sample Output
-Original Array :- [1, 9, 2, 8, 3, 7, 4, 6, 5, 10, 0]
-Original Array After Sorting :- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+- Original Array :- [1, 9, 2, 8, 3, 7, 4, 6, 5, 10, 0]
+- Original Array After Sorting :- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 ---
