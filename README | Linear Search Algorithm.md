@@ -1,34 +1,34 @@
-# Linear Search on Card Deck
+# Bubble Sort Algorithm
 
-This project demonstrates a simple **Linear Search Algorithm** implemented in Python to find the position of a specific card in a predefined deck.
-
----
-
-## Problem Statement
-
-- We have a deck of 13 cards:
-- ["A", "K", "Q", "J", 2, 3, 4, 5, 6, 7, 8, 9, 10]
-- The goal is to find the position of a given card (e.g., 5) by turning the minimum number of cards, using Linear Search.
+## Goal
+The goal is to sort an unsorted array (e.g., `[1,9,2,8,3,7,4,6,5,10,0]`) into ascending order using **Bubble Sort**.
 
 ---
 
 ## How It Works
-- The user inputs the card they want to search for.
-- The algorithm checks each card sequentially from left to right.
-- Once the card is found, it prints:
-- The number of cards turned
-- The position of the card in the deck (0‑indexed and human‑friendly)
-- If the card is not found, the program notifies the user.
-
+- The algorithm repeatedly compares adjacent elements.
+- If the left element is greater than the right, they are swapped.
+- This process continues until the array is fully sorted.
+- Each pass "bubbles up" the largest element to its correct position.
 
 ---
 
 ## Sample Output
-- Cards:- ['A', 'K', 'Q', 'J', 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Original Array :- [1, 9, 2, 8, 3, 7, 4, 6, 5, 10, 0]
+Original Array After Sorting :- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-- Solve The DSA: We have 13 cards. At which position is card 5? You have to check by turning minimum cards.
 
-- Enter Card Which You Want To Test :- 5
+---
 
-- Number of Cards Turned By Using Linear Search Algorithm :- 8
-- Position of Card '5' By Using Linear Search Algorithm :- 7
+## Complexity
+- **Best Case:** O(n) → Already sorted array (with optimization).
+- **Worst Case:** O(n²) → Completely unsorted array.
+- **Average Case:** O(n²)
+- **Space Complexity:** O(1)
+
+---
+
+## Use Cases
+- Educational demonstrations of sorting basics.
+- Small datasets where simplicity is preferred over efficiency.
+- Foundation for understanding more advanced sorting algorithms.
