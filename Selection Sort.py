@@ -6,10 +6,11 @@ NoOfElementsInArr=len(UsortedArray)
 for i in range(NoOfElementsInArr):
     k=i
     for j in range(i+1,NoOfElementsInArr):
-        if UsortedArray[j]<UsortedArray[i]:
+        if UsortedArray[j]<UsortedArray[k]:
             k=j
             
     UsortedArray[i],UsortedArray[k]=UsortedArray[k],UsortedArray[i]
 
 print('Original Array After Sorting:-',UsortedArray)
+
 
